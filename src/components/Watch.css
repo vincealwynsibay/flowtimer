@@ -1,0 +1,30 @@
+h1.time {
+	margin: 5rem 0;
+}
+
+.buttons {
+	display: flex;
+	justify-content: space-between;
+}
+
+.buttons a {
+	cursor: pointer;
+	text-decoration: none;
+	padding: 0.45rem 1.7rem;
+	color: #113f67;
+
+	border-radius: 0.2rem;
+}
+
+.buttons a:only-of-type {
+	margin: 0 auto;
+}
+
+.buttons a:first-of-type {
+	background-color: #113f67;
+	color: white;
+}
+
+.buttons a:last-of-type {
+	border: 1px solid #113f67;
+}

@@ -1,0 +1,30 @@
+h1.time {
+	margin: 5rem 0;
+}
+
+.timer .buttons {
+	display: flex;
+	gap: 1rem;
+}
+
+.timer .buttons a {
+	cursor: pointer;
+	text-decoration: none;
+	padding: 0.45rem 1.7rem;
+	color: #113f67;
+
+	border-radius: 0.2rem;
+}
+
+.timer .buttons a:only-of-type {
+	margin: 0 auto;
+}
+
+.timer a:first-of-type {
+	background-color: #113f67;
+	color: white;
+}
+
+.timer a:last-of-type {
+	border: 1px solid #113f67;
+}
