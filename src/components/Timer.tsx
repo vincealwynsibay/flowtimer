@@ -27,7 +27,13 @@ const Timer = (props: Props) => {
 				if (restTime > 0) {
 					setRestTime((curr) => curr - 1);
 				} else {
-					props.setTime(0);
+					const greeting = new Notification("Flowtime", {
+						body: "Time to Work!",
+					});
+					setTimeout(() => {
+						greeting.close();
+					}, 3000);
+					props.setMode("work");
 				}
 			}, 1000);
 			setFormattedRestTime(formatTime(restTime));

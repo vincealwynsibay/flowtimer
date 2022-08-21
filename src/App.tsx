@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import reactLogo from "./assets/react.svg";
 import Timer from "./components/Timer";
 import Stopwatch from "./components/Stopwatch";
@@ -7,6 +7,12 @@ import "./App.css";
 function App() {
 	const [mode, setMode] = useState<"work" | "rest">("work");
 	const [time, setTime] = useState<number>(0);
+
+	useEffect(() => {
+		Notification.requestPermission().then(function (permission) {
+			console.log(permission);
+		});
+	}, []);
 
 	return (
 		<div className='container'>

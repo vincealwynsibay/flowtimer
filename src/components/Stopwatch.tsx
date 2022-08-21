@@ -27,7 +27,6 @@ const Stopwatch = (props: Props) => {
 
 		if (timerState === "running") {
 			interval = setInterval(() => {
-				console.log(props.mode);
 				props.setTime((curr) => curr + 1);
 			}, 1000);
 		}
